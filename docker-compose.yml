@@ -1,0 +1,16 @@
+services:
+  doc2pdf-dev:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    container_name: doc2pdf-dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./input:/app/input:ro
+      - ./output:/app/output:rw
+      - ./src:/app/src:rw
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONPATH=/app
