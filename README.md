@@ -43,9 +43,3 @@ This service provides API to convert DOCX files to PDF format using LibreOffice
 ### Downstream
 
 1. LibreOffice (for PDF conversion)
-
-## Authors
-
-| Name        | Email          |
-| ----------- | -------------- |
-| Yash Sharma | `yash@saal.ai` |
